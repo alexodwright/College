@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Vanilla AMOLED",
+  "accentColor": "#00b8f5",
+  "enabledCssSnippets": [
+    "General Tweaks",
+    "Coloured Sidebar Items"
+  ],
+  "interfaceFontFamily": "JetBrains Mono NL,JetBrains Mono",
+  "textFontFamily": "JetBrains Mono NL,JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono NL,JetBrains Mono",
+  "baseFontSize": 16,
+  "baseFontSizeAction": false,
+  "theme": "obsidian",
+  "showRibbon": false
+}

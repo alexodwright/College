@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiPencil",
+      "LiLayers3",
+      "LiLineChart",
+      "LiSquareDivide",
+      "LiCloud"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "07 - Media": "LiListMusic",
+  "04 - Intermediate Programming": "LiCode",
+  "03 - Information Storage and Management I": "LiDatabase",
+  "02 - Data Structures and Algorithms I": "LiLink",
+  "01 - Computer Architecture": "LiCpu",
+  "00 - Cloud Infrastructure and Services": "LiCloud",
+  "05 - Introduction to Linear Algebra": "LiLineChart",
+  "06 - General": "LiLayers3",
+  "10 - Excalidraw": "LiPencil"
+}

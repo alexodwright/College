@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "bd1516b1d97fa5a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0911c9fbdd0d549",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d487cd9c44ef183c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Data Structures and Algorithms I/Open Addressing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Open Addressing"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70170ae756af138c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ed92be74c8e6e23",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21e19da2aecc11df",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0eeef3df58f18619",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "bb71b04ea7e3a7f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "55eb34b04d4de9ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "053427a682a4c6e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a78b5a891d2e3cf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02 - Data Structures and Algorithms I/Lecture 8 - The Linked List.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Lecture 8 - The Linked List"
+            }
+          },
+          {
+            "id": "7a2b8d93fec81b63",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "4da57ad92a7dde1f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f7ba5e311bd560b3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02 - Data Structures and Algorithms I/Open Addressing.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Open Addressing"
+            }
+          },
+          {
+            "id": "5021fb6785efe1de",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "d487cd9c44ef183c",
+  "lastOpenFiles": [
+    "02 - Data Structures and Algorithms I/Lecture 6.md",
+    "02 - Data Structures and Algorithms I/2024-10-31 - Exam.md",
+    "Answers.md",
+    "02 - Data Structures and Algorithms I/Open Addressing.md",
+    "00 - Cloud Infrastructure and Services/Lecture 8 - Virtualization.md",
+    "00 - Cloud Infrastructure and Services/Labs/AWS Academy Lab 6.md",
+    "02 - Data Structures and Algorithms I/Lecture 10 - Hash ADT.md",
+    "05 - Introduction to Linear Algebra/Nullspaces and Subspaces - Week 5.md",
+    "07 - Media/20241029_092327755_iOS.jpg",
+    "04 - Intermediate Programming/Lecture 1 - Object Orientated Programming.md",
+    "06 - General/Assignments Missed.md",
+    "07 - Media/Pasted image 20241029185827.png",
+    "07 - Media/Pasted image 20241029185806.png",
+    "07 - Media/Pasted image 20241029190038.png",
+    "07 - Media/Pasted image 20241029185822.png",
+    "00 - Cloud Infrastructure and Services/Labs",
+    "00 - Cloud Infrastructure and Services/Untitled.md",
+    "04 - Intermediate Programming/TKInter.md",
+    "02 - Data Structures and Algorithms I/Lecture 1.md",
+    "06 - General",
+    "02 - Data Structures and Algorithms I/Lecture 2.md",
+    "01 - Computer Architecture/Lecture 9 - Floating Point Precision.md",
+    "03 - Information Storage and Management I/More Normalisation Forms.md",
+    "03 - Information Storage and Management I/Lecture 3.md",
+    "00 - Cloud Infrastructure and Services/Lecture 7 - Memory Virtualization.md",
+    "02 - Data Structures and Algorithms I/Lecture 7 - The Queue.md",
+    "02 - Data Structures and Algorithms I/Lecture 5 - Array Based Lists.md",
+    "07 - Media/CS2515-Class Test Sample2024.pdf",
+    "02 - Data Structures and Algorithms I/Lecture 8 - The Linked List.md",
+    "02 - Data Structures and Algorithms I/Lecture 9 - Doubly Linked Lists.md",
+    "07 - Media/Pasted image 20241029131420.png",
+    "07 - Media/Pasted image 20241029133931.png",
+    "07 - Media/Pasted image 20241029133452.png",
+    "07 - Media/Pasted image 20241029133405.png",
+    "07 - Media/Pasted image 20241029133035.png",
+    "Untitled 1.md",
+    "04 - Intermediate Programming/Lecture 7 - Shelves.md",
+    "05 - Introduction to Linear Algebra",
+    "01 - Computer Architecture/Lecture 2.md",
+    "01 - Computer Architecture/Lecture 10 - Processor Design.md",
+    "Excalidraw",
+    "07 - Media",
+    "07 - Media/Adobe_Scan_16_Nov_2023.pdf",
+    "07 - Media/Problem_Set_0.pdf",
+    "07 - Media/Adobe_Scan_16_Nov_2023_(1).pdf",
+    "Notes/00 - Foundation to Computer Science/Untitled"
+  ]
+}
