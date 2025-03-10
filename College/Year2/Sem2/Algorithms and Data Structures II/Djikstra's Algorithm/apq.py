@@ -104,7 +104,6 @@ class APQBH:
 
     def remove_min(self):
         root = self.heap[0]
-        # print(self.heap[0]._index, self.heap[-1]._index)
         self.heap[0], self.heap[-1] = self.heap[-1], self.heap[0]
         self.heap[0]._index, self.heap[-1]._index = self.heap[-1]._index, self.heap[0]._index
         self.heap.pop()

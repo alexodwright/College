@@ -11,7 +11,7 @@ def graphreader(filename):
         nodeid = int(file.readline().split()[1])
         vertex = graph.add_vertex(nodeid)
         entry = file.readline() #either 'Node' or 'Edge'
-    print('Read', num, 'vertices and added into the graph')
+    # print('Read', num, 'vertices and added into the graph')
     num = 0
     while entry == 'Edge\n':
         num += 1
@@ -23,6 +23,6 @@ def graphreader(filename):
         edge = graph.add_edge(sv, tv, length)
         file.readline() #read the one-way data
         entry = file.readline() #either 'Node' or 'Edge'
-    print('Read', num, 'edges and added into the graph')
+    # print('Read', num, 'edges and added into the graph')
     # print(graph)
     return graph
