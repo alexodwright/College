@@ -89,8 +89,6 @@ class APQBH:
         left_child_index = (element._index * 2) + 1
         right_child_index = (element._index * 2) + 2
         target = element
-        print(f"Before swap: {[(v._key, v._value.__str__(), v._index) for v in self.heap]}")
-        # print(f"Before swap: {[v._index for v in self.heap]}")
         if left_child_index < self.size - 1 and self.heap[left_child_index]._key < target._key:
             target = self.heap[left_child_index]
         if right_child_index < self.size - 1 and self.heap[right_child_index]._key < target._key:
@@ -99,7 +97,6 @@ class APQBH:
             return
         self.heap[element._index]._index, self.heap[target._index]._index = self.heap[target._index]._index, self.heap[element._index]._index
         self.heap[element._index], self.heap[target._index] = self.heap[target._index], self.heap[element._index]
-        print(f"After swap: {[(v._key, v._value.__str__(), v._index) for v in self.heap]}")
         self.bubble_down(self.heap[element._index])
 
     def minimum(self):
@@ -117,15 +114,13 @@ class APQBH:
         return root
 
     def update_key(self, element, key):
-        if element._key == key:
-            return
-        elif element._key > key:
+        element._key = key
+        if element._key > key:
             self.bubble_up(self.heap[element._index])
-        else:
+        elif element._key < key:
             self.bubble_down(self.heap[element._index])
 
     def get_key(self, element):
-        # print([v._index for v in self.heap])
         return element._key
 
     def remove(self, element):
