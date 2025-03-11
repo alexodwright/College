@@ -1,5 +1,5 @@
 from apq import APQUL, APQBH
-from graph import Vertex, Edge, Graph
+from graph import Vertex, Graph
 
 def djikstra(s: Vertex, g: Graph, apq):
     open = apq() # cost as the key and the vertex as the value
@@ -62,7 +62,7 @@ def djikstra_question_4(s: Vertex, d: Vertex, g: Graph, apq):
         pred = preds.pop(v)
         # add an entry for v:(cost, predecessor) into closed
         closed[v] = (cost, pred)
-        
+
         # if the node being removed from the heap is the destination, break out of the loop and return the current tree
         if v == d:
             return closed

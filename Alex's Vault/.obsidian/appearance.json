@@ -1,6 +1,6 @@
 {
-  "cssTheme": "Vanilla AMOLED",
   "accentColor": "#00b8f5",
+  "cssTheme": "Vanilla AMOLED",
   "enabledCssSnippets": [
     "General Tweaks",
     "Coloured Sidebar Items"
