@@ -58,6 +58,4 @@ while True:
         # Close the client connection socket
         connectionSocket.close()
 
-    finally:
-        serverSocket.close()
-
+serverSocket.close()
