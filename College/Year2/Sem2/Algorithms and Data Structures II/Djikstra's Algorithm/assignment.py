@@ -13,10 +13,12 @@ def path(end, closed):
         if closed[pred][1] is not None:
             output.append(closed[pred][1].element())
         pred = closed[pred][1]
-    output = "->".join(map(str, output[::-1]))
-    output += f" : With a total cost of {closed[end][0]}"
-    print(output)
     print(len(output))
+    # output = "->".join(map(str, output[::-1]))
+    # output += f" : With a total cost of {closed[end][0]}"
+
+def get_vertex_by_row_col(width, row, col, graph):
+    return graph.get_vertex_by_label((width*row)+col+1)
 
 def part_1() -> None:
     # Compute the shortest path for simplegraph1-2 and simplegraph2-2
@@ -44,21 +46,20 @@ def part_2() -> None:
 
 def part_3() -> None:
     # create a 10x10, 20x20, 30x30, ..., 100x100 random graph and compute the shortest path's cost also compute the average time over 10 iterations
-    gridsizes = []
-    execution_times = []
+    exec_times = []
     for i in range(10, 101, 10):
-        total = 0
-        gridsizes.append(i)
-        for j in range(10):
+        e = []
+        for _ in range(10):
             graph = create_random_graph(i, i)
-            source = graph.get_vertex_by_label(1)
+            source = get_vertex_by_row_col(i, i//2, i//2, graph)
             exec_time, res = time_func(djikstra, source, graph, APQBH)
-            total += exec_time
-            # get the final path cost from [n//2][m//2] to [0][0]
-            print(f"Final path length for graph size {i}x{i}, iteration {j+1}: {res[graph.get_vertex_by_label((i//2)*(i//2))][0]}")
-        print(f"Average time for a {i}x{i} grid graph is {(total/10):.8f}s")
-        execution_times.append(total/10)
-    plot_times(gridsizes, execution_times, "Average Execution Time vs Grid Size")
+            e.append(exec_time)
+            print(f"Path length for graph size {i}x{i}: ", end="")
+            path(get_vertex_by_row_col(i, 0, 0, graph), res)
+        print(f"Average time for {i}x{i} grid is: {(sum(e)/len(e)):.8f}s")
+        print()
+    exec_times.append(e)
+        
 
 def part_4() -> None:
     # with a random graph size of 500x500, compute the shortest path to a node increasingly further away from the source
@@ -80,36 +81,11 @@ def part_4() -> None:
         print(f"The execution time for the modified djikstra was {exec_time2}s")
     plot_times([i for i in range(1, 10)], "Impact of finding shortest path to all other nodes", original_djikstra_times, modified_djikstra_times)
 
-def part_5() -> None:
-    # check the unordered list implementation against the binary heap implementation with the same scenario as question 2
-    print("Unordered List Implementation: ")
-    for i in range(10, 101, 10):
-        total = 0
-        for j in range(10):
-            graph = create_random_graph(i, i)
-            source = graph.get_vertex_by_label(1)
-            exec_time, res = time_func(djikstra, source, graph, APQUL)
-            total += exec_time
-            print(f"Final path cost for graph size {i}x{i}, iteration {j+1}: {res[graph.get_vertex_by_label((i//2)*(i//2))][0]}")
-        print(f"Average time for a {i}x{i} grid graph is {(total/10):.8f}s")
-
-    print("Binary Heap Implementation: ")
-    for i in range(10, 101, 10):
-        total = 0
-        for j in range(10):
-            graph = create_random_graph(i, i)
-            source = graph.get_vertex_by_label(1)
-            exec_time, res = time_func(djikstra, source, graph, APQBH)
-            total += exec_time
-            print(f"Final path cost for graph size {i}x{i}, iteration {j+1}: {res[graph.get_vertex_by_label((i//2)*(i//2))][0]}")
-        print(f"Average time for a {i}x{i} grid graph is {(total/10):.8f}s")
-
 def main() -> None:
     # part_1()
     # part_2()
-    # part_3()
-    part_4()
-    # part_5()
+    part_3()
+    # part_4()
 
 
 if __name__=="__main__":
